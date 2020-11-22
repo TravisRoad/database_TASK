@@ -1,0 +1,4 @@
+INSERT INTO user58db.`2tbadjcell`
+SELECT B.S_SECTOR_ID, B.N_SECTOR_ID, NULL, NULL
+FROM user58db.`3tbsecadjcel` AS B
+WHERE B.S_SECTOR_ID = "124673-0";
