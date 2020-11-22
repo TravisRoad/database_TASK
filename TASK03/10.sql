@@ -1,0 +1,11 @@
+SELECT B.SCELL, C.SECTOR_NAME AS SS_NAME, B.NCELL, D.SECTOR_NAME AS NS_NAME
+FROM user58db.`10tbc2i` AS A,
+     user58db.`10tbc2i` AS B,
+     user58db.`1tbcell` AS C,
+     user58db.`1tbcell` AS D
+WHERE A.SCELL = "124673-0"
+  AND A.NCELL = "259772-0"
+  AND A.C2I_Mean < B.C2I_Mean
+  AND C.SECTOR_ID = B.SCELL
+  AND D.SECTOR_ID = B.NCELL
+ORDER BY B.C2I_Mean DESC;
