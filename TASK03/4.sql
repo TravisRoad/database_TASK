@@ -1,0 +1,4 @@
+SELECT SECTOR_NAME
+FROM user58db.`1.tbcell`
+WHERE SECTOR_NAME LIKE "_____-%-%"
+	AND ENODEB_NAME LIKE "____%____";
