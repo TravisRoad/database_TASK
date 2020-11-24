@@ -1,6 +1,8 @@
 SELECT A.SECTOR_ID, C.SECTOR_NAME, COUNT(B.N_SECTOR_ID) AS CNT
-FROM user58db.`4tboptcell` AS A JOIN user58db.`2tbadjcell` AS B JOIN user58db.`1tbcell` AS C
-ON A.SECTOR_ID = B.S_SECTOR_ID AND A.SECTOR_ID = C.SECTOR_ID
+FROM user58db.`4tboptcell` AS A
+	     JOIN user58db.`2tbadjcell` AS B
+	     JOIN user58db.`1tbcell` AS C
+	          ON A.SECTOR_ID = B.S_SECTOR_ID AND A.SECTOR_ID = C.SECTOR_ID
 WHERE A.CELL_TYPE = "优化区"
 GROUP BY A.SECTOR_ID
 HAVING COUNT(B.N_SECTOR_ID) > 10
