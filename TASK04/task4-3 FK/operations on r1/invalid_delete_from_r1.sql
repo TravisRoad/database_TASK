@@ -1,0 +1,2 @@
+DELETE FROM user60db.`1.tbcell`
+WHERE SECTOR_ID = '124672-0'
