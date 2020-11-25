@@ -1,0 +1,1 @@
+show global variables where Variable_name in ( 'interactive_timeout', 'wait_timeout');
