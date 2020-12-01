@@ -1,8 +1,9 @@
-use user58db;
+# mysql doesn't have not exists clause!
+/*use user58db;
 select SCELL, NCELL
 from `11tbhandover`
-where NCELL not in (select NCELL
+where NCELL not exists (select NCELL
                     from `11tbhandover`
-                    where NCELL not in ('15290-128', '259595-1', '124711-0', '47444-1'))
-
+                    where NCELL in ('15290-128', '259595-1', '124711-0', '47444-1'))
+*/
 
