@@ -1,3 +1,0 @@
-UPDATE user60db.tbcellcopy 
-SET SECTOR_ID = '124672-0'
-WHERE SECTOR_NAME = 'A池刘果-HLHF-2'

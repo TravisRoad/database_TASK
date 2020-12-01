@@ -1,4 +1,0 @@
-UPDATE user60db.`1.tbcell`
-SET SECTOR_ID = '11317-126'
-WHERE SECTOR_ID = '11317-129'
-

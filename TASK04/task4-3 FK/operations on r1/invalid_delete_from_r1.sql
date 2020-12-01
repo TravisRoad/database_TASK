@@ -1,2 +1,0 @@
-DELETE FROM user58db.`1tbcell`
-WHERE SECTOR_ID = '124672-0'

@@ -1,3 +1,0 @@
-SELECT *
-FROM user60db.tbcellcopy
-WHERE SECTOR_ID IS NULL
