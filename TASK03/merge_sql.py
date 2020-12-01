@@ -54,7 +54,10 @@ def output(v: str):
             print("- " + file)
             print("```"+v)
             for line in lzz:
-                print(line[:-2])
+                if line[-2:] == '\r\n':
+                    print(line[:-2])
+                else:
+                    print(line)
             print("```\n")
 
 output("sql")
