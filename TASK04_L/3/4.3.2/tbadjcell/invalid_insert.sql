@@ -1,0 +1,3 @@
+INSERT INTO user58db.`2tbadjcell`
+VALUES
+('124674-0', '11', 38400, 38400);

@@ -1,0 +1,4 @@
+UPDATE user58db.tbcellcopy
+SET SECTOR_ID = '10-10'
+WHERE SECTOR_ID = '1234567000';
+
