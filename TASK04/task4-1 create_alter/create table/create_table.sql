@@ -1,4 +1,4 @@
-create table user60db.`tbCellCopy`(
+create table user58db.`tbCellCopy`(
 SECTOR_ID nvarchar(50),
 SECTOR_NAME nvarchar(255),
 ENODEBID int(11) not null,
