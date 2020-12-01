@@ -1,0 +1,3 @@
+UPDATE user58db.tbcellcopy
+SET SECTOR_ID = '124672-0'
+WHERE SECTOR_NAME = 'A池张沟村-HLHF-1';
