@@ -113,7 +113,7 @@ public class Dao {
             String LONGITUDE = rs.getString("LONGITUDE");
 
             // 输出数据
-            System.out.println("City:" + city);
+            System.out.print("City:" + city);
             System.out.print("\tENODEBID: " + ENODEBID);
             System.out.print("\tenodeb_name: " + enodeb_name);
             System.out.print("\tLONGITUDE:" + LONGITUDE);
@@ -125,9 +125,9 @@ public class Dao {
     private  static  void delete(Statement stmt) throws SQLException {
         String sql="delete from `1tbcell` where CITY='beijing';";
         stmt.executeUpdate(sql);
-        sql = "select * from `1tbcell`;";
+        sql = "select * from `1tbcell` where CITY='beijing';";
         ResultSet rs = stmt.executeQuery(sql);
-        stmt.executeQuery(sql);
+        //stmt.executeQuery(sql);
         while (rs.next()) {
             String city = rs.getString("CITY");
             String ENODEBID = rs.getString("ENODEBID");
@@ -135,7 +135,7 @@ public class Dao {
             String LONGITUDE = rs.getString("LONGITUDE");
 
             // 输出数据
-            System.out.println("City:" + city);
+            System.out.print("City:" + city);
             System.out.print("\tENODEBID: " + ENODEBID);
             System.out.print("\tenodeb_name: " + enodeb_name);
             System.out.print("\tLONGITUDE:" + LONGITUDE);
